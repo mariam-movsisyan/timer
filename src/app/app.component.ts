@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'input-output-lesson';
+public inputValue!: string
+public arr: string[] = []
+    public addTimer(){
+        this.arr.push(this.inputValue)
+        console.log(this.inputValue)
+    }
+
+    // public removed(index: number): void {
+    //   this.arr.splice(index, 1);
+    // }
 }
+
